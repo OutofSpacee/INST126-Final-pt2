@@ -1,5 +1,4 @@
-# INST126-Final-pt2
-# Word Guessing Game
+# INST126-Final-pt2 . . . Word Guessing Game
 ## Basic rules:
   The Word guessing game allows for any ammount of players.
   There is a store of words in a word bank, created by myself, that the players have to guess to beat the others.
