@@ -17,12 +17,9 @@ def initialize_game_state(secret_word):
         'max_word_guesses': 3
     }
 
-def display_game_state(game_state):
-    """Displays the current state of the game each round."""
-    secret_word = game_state['secret_word']
+def display_letter_guesses(game_state):
+    """Displays the letters guessed so far."""
     letter_guesses = game_state['letter_guesses']
-    display_word = ''.join([letter if letter in letter_guesses else '_' for letter in secret_word])
-    print(f"Current word: {display_word}")
     print(f"Letter guesses: {', '.join(sorted(letter_guesses))}")
     print(f"Word guesses remaining: {game_state['max_word_guesses'] - game_state['word_guesses']}")
 
